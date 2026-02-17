@@ -1,5 +1,5 @@
 from src.domain.interfaces import IQualityClassifier
-from src.domain.models import ProductSample, QualityGrade
+from src.domain.entities import ProductSample, QualityGrade
 
 class FormulaClassifier(IQualityClassifier):
     def evaluate(self, sample: ProductSample) -> QualityGrade:
