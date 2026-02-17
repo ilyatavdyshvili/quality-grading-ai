@@ -1,3 +1,5 @@
+## Лабораторная работа №1. Вариант №14
+
 # Quality Grading AI
 
 ## Структура проекта
@@ -18,7 +20,9 @@ poetry run uvicorn src.presentation.api:app --reload
 
 # Запуск тестов
 poetry run pytest
-
+```
+##Проверка в ручную.
+Тесты проводились в терминале Linux
 ## Standard-проверка:
 
 curl -X POST http://127.0.0.1:8000/evaluate -H "Content-Type: application/json" -d '{"acidity": 5.0, "density": 0.95, "alcohol_content": 10.0}'
@@ -41,3 +45,4 @@ curl -X POST http://127.0.0.1:8000/evaluate -H "Content-Type: application/json" 
 curl -X POST http://127.0.0.1:8000/evaluate -H "Content-Type: application/json" -d '{"acidity": 7.9, "density": 1.04, "alcohol_content": 14.8}'
 curl -X POST http://127.0.0.1:8000/evaluate -H "Content-Type: application/json" -d '{"acidity": 8.3, "density": 1.05, "alcohol_content": 15.0}'
 curl -X POST http://127.0.0.1:8000/evaluate -H "Content-Type: application/json" -d '{"acidity": 8.7, "density": 1.07, "alcohol_content": 15.8}'
+
