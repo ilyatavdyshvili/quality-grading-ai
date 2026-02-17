@@ -1,4 +1,4 @@
-from src.domain.models import ProductSample, QualityGrade
+from src.domain.entities import ProductSample, QualityGrade
 from src.application.services import QualityControlService
 from unittest.mock import Mock
 
